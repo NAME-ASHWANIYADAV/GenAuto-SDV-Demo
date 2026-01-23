@@ -1,0 +1,36 @@
+Act as a Senior Automotive Software Architect and Full-Stack Developer. I need a robust, futuristic "Proof of Concept" (PoC) dashboard for a hackathon project named "GenAuto-SDV" (Generative AI for Software Defined Vehicles).
+
+Write a complete, single-file Python script using 'Streamlit' and 'Plotly' libraries. The app must look highly professional, dark-themed, and technically sophisticated.
+
+Key Features Required in the App:
+
+1. **Sidebar (The GenAI Engineer Interface):**
+   - A text area for the user to input a prompt (e.g., "Create a Battery Health Monitor Service").
+   - A "Generate & Deploy" button.
+   - When clicked, simulate a process with a progress bar showing steps: "Parsing Requirements", "Generating MISRA C++ Code", "Validating with Physics Engine", "Deploying via OTA".
+   - Display a block of syntax-highlighted C++ code (make it look complex and professional, using classes and SOME/IP references).
+
+2. **Main Dashboard (The Vehicle Visualization):**
+   - **Header:** "GenAuto-SDV | Live Telemetry & Health Monitoring".
+   - **Top Row (Metrics):** Use large, colorful metric cards for:
+     - Vehicle Speed (simulate real-time fluctuation).
+     - Battery SoC (State of Charge).
+     - Tire Pressure (PSI).
+     - System Latency (ms).
+   - **Middle Row (Live Graphs):**
+     - Use Plotly to create a live-updating line chart showing "Motor Torque vs. RPM".
+     - A gauge chart for "Battery Health prediction".
+   - **Bottom Row (Logs):** A scrolling terminal-like log window showing system messages (e.g., "Service: TireMonitor started", "Alert: Prediction Model Confidence 98%").
+
+3. **Technical Nuances (To Impress Judges):**
+   - Add a "Simulation Mode" toggle.
+   - Use technical jargon in the UI: "SOME/IP Connected", "ISO 26262 Compliant", "Anomaly Detected".
+   - The visuals should be consistent with a Tesla or Modern EV dashboard.
+
+Code Constraints:
+- Use 'st.set_page_config(layout="wide")'.
+- Use dummy data (random numbers) to simulate live sensors.
+- Ensure the code handles errors gracefully.
+- Provide a 'requirements.txt' list at the start.
+
+Generate the full, ready-to-run code now.
