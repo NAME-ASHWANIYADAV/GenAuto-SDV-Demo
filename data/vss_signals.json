@@ -1,0 +1,114 @@
+{
+  "signals": {
+    "Vehicle.Speed": {
+      "type": "Float",
+      "unit": "km/h",
+      "min": 0,
+      "max": 240,
+      "description": "Vehicle speed",
+      "vss_path": "Vehicle.Speed",
+      "can_id": "0x185",
+      "variants": ["ICE", "Hybrid", "EV"]
+    },
+    "Vehicle.Powertrain.Transmission.CurrentGear": {
+      "type": "Int8",
+      "unit": "",
+      "min": -1,
+      "max": 8,
+      "description": "Current gear position (-1=R, 0=N, 1-8=Forward)",
+      "vss_path": "Vehicle.Powertrain.Transmission.CurrentGear",
+      "can_id": "0x191",
+      "variants": ["ICE", "Hybrid", "EV"]
+    },
+    "Vehicle.OBD.ThrottlePosition": {
+      "type": "Float",
+      "unit": "%",
+      "min": 0,
+      "max": 100,
+      "description": "Throttle pedal position percentage",
+      "vss_path": "Vehicle.OBD.ThrottlePosition",
+      "can_id": "0x200",
+      "variants": ["ICE", "Hybrid", "EV"]
+    },
+    "Vehicle.Chassis.Brake.PedalPosition": {
+      "type": "Float",
+      "unit": "%",
+      "min": 0,
+      "max": 100,
+      "description": "Brake pedal position percentage",
+      "vss_path": "Vehicle.Chassis.Brake.PedalPosition",
+      "can_id": "0x210",
+      "variants": ["ICE", "Hybrid", "EV"]
+    },
+    "Vehicle.Powertrain.Range": {
+      "type": "Float",
+      "unit": "km",
+      "min": 0,
+      "max": 600,
+      "description": "Remaining driving range",
+      "vss_path": "Vehicle.Powertrain.Range",
+      "can_id": "0x3A0",
+      "variants": ["Hybrid", "EV"]
+    },
+    "Vehicle.Powertrain.TractionBattery.StateOfCharge.Current": {
+      "type": "Float",
+      "unit": "%",
+      "min": 0,
+      "max": 100,
+      "description": "Battery State of Charge",
+      "vss_path": "Vehicle.Powertrain.TractionBattery.StateOfCharge.Current",
+      "can_id": "0x3B0",
+      "variants": ["Hybrid", "EV"]
+    },
+    "Vehicle.Chassis.SteeringWheel.Angle": {
+      "type": "Float",
+      "unit": "degrees",
+      "min": -720,
+      "max": 720,
+      "description": "Steering wheel angle, positive = right",
+      "vss_path": "Vehicle.Chassis.SteeringWheel.Angle",
+      "can_id": "0x0C6",
+      "variants": ["ICE", "Hybrid", "EV"]
+    },
+    "Vehicle.Chassis.Axle.Row1.Wheel.Left.Tire.Pressure": {
+      "type": "Float",
+      "unit": "PSI",
+      "min": 0,
+      "max": 50,
+      "description": "Front Left Tire Pressure",
+      "vss_path": "Vehicle.Chassis.Axle.Row1.Wheel.Left.Tire.Pressure",
+      "can_id": "0x2F0",
+      "variants": ["ICE", "Hybrid", "EV"]
+    },
+    "Vehicle.Chassis.Axle.Row1.Wheel.Right.Tire.Pressure": {
+      "type": "Float",
+      "unit": "PSI",
+      "min": 0,
+      "max": 50,
+      "description": "Front Right Tire Pressure",
+      "vss_path": "Vehicle.Chassis.Axle.Row1.Wheel.Right.Tire.Pressure",
+      "can_id": "0x2F1",
+      "variants": ["ICE", "Hybrid", "EV"]
+    },
+    "Vehicle.Chassis.Axle.Row2.Wheel.Left.Tire.Pressure": {
+      "type": "Float",
+      "unit": "PSI",
+      "min": 0,
+      "max": 50,
+      "description": "Rear Left Tire Pressure",
+      "vss_path": "Vehicle.Chassis.Axle.Row2.Wheel.Left.Tire.Pressure",
+      "can_id": "0x2F2",
+      "variants": ["ICE", "Hybrid", "EV"]
+    },
+    "Vehicle.Chassis.Axle.Row2.Wheel.Right.Tire.Pressure": {
+      "type": "Float",
+      "unit": "PSI",
+      "min": 0,
+      "max": 50,
+      "description": "Rear Right Tire Pressure",
+      "vss_path": "Vehicle.Chassis.Axle.Row2.Wheel.Right.Tire.Pressure",
+      "can_id": "0x2F3",
+      "variants": ["ICE", "Hybrid", "EV"]
+    }
+  }
+}

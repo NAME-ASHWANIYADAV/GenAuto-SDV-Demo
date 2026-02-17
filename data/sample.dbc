@@ -1,0 +1,35 @@
+VERSION ""
+
+NS_ :
+
+BS_:
+
+BU_: ECU_Chassis ECU_Powertrain ECU_Body
+
+BO_ 389 TirePressure_FL: 4 ECU_Chassis
+ SG_ TirePressure_FL_PSI : 0|16@1+ (0.01,0) [0|50] "PSI" Vector__XXX
+ SG_ TireTemp_FL : 16|8@1+ (1,-40) [-40|215] "degC" Vector__XXX
+
+BO_ 390 TirePressure_FR: 4 ECU_Chassis
+ SG_ TirePressure_FR_PSI : 0|16@1+ (0.01,0) [0|50] "PSI" Vector__XXX
+
+BO_ 391 TirePressure_RL: 4 ECU_Chassis
+ SG_ TirePressure_RL_PSI : 0|16@1+ (0.01,0) [0|50] "PSI" Vector__XXX
+
+BO_ 392 TirePressure_RR: 4 ECU_Chassis
+ SG_ TirePressure_RR_PSI : 0|16@1+ (0.01,0) [0|50] "PSI" Vector__XXX
+
+BO_ 512 EngineData: 8 ECU_Powertrain
+ SG_ VehicleSpeed_kmh : 0|16@1+ (0.01,0) [0|300] "km/h" Vector__XXX
+ SG_ ThrottlePosition : 16|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ GearPosition : 24|4@1+ (1,-1) [-1|8] "" Vector__XXX
+
+BO_ 528 BrakeData: 4 ECU_Chassis
+ SG_ BrakePedalPos : 0|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+
+BO_ 944 BatteryData: 8 ECU_Powertrain
+ SG_ BatterySoC : 0|8@1+ (0.5,0) [0|100] "%" Vector__XXX
+ SG_ BatteryVoltage : 8|16@1+ (0.1,0) [0|500] "V" Vector__XXX
+
+BO_ 198 SteeringData: 4 ECU_Chassis
+ SG_ SteeringAngle : 0|16@1+ (0.1,-720) [-720|720] "deg" Vector__XXX
